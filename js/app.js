@@ -15,4 +15,4 @@ $(document).ready(function() {
             console.log(random);
         };
     })
-});https://github.com/belgerion/game_test/blob/master/board_tiles/BigGrass1.jpg?raw=true
+});//https://github.com/belgerion/game_test/blob/master/board_tiles/BigGrass1.jpg?raw=true
