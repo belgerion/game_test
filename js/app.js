@@ -1,11 +1,18 @@
 $(document).ready(function() {
-    function generateMap(){
+    let gameStart = document.getElementById('gameStart');
+
+    gameStart.addEventListener('click', function(){
+        $('#gameStart').addClass('hidden');
+
         let userX = 8;
-        let userY = 12;
+        let userY = 24;
+        
 
         for (var i = 1; i <= (userX * userY); i++){
-            $('#gameSpace').append('<div id="hex' + i + '" class="hex col-lg-1">' + i + '</div>');
+            let random = Math.round(((Math.random() * 10) * 3) / 10);
+            $('#gameSpace').append('<div id="hex' + i + '" class="hex col-lg-1">' + i + '<br>Height:' + random + '</div>');
+            document.getElementById('hex'+i).style.backgroundImage = "url('./board_tiles/biggrass" + random + ".jpg')";
+            console.log(random);
         };
-    };
-    generateMap();
+    })
 });

@@ -5,6 +5,9 @@ body{
 .hex {
     height: 100px;
     width: 100px;
-    background: url('../board_tiles/BigGrass2.jpg');
     color: yellow;
+}
+
+.hidden {
+    display: none;
 }
